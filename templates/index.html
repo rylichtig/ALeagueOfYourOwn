@@ -1,12 +1,19 @@
-<h1>A league of Your Own</h1>
+{% extends "base.html" %}
+{% block title %}
+	HOME
+{% endblock %}
 
-<ol>
-	{% for user in users %}
-    	<li>{{ user['first_name'] }} {{ user['last_name'] }}, {{ user['email'] }}</li>
-	{% endfor %}
-</ol>
+{% block body %}
+	<h1>A league of Your Own</h1>
+
+	<ol>
+		{% for user in users %}
+			<li>{{ user['first_name'] }} {{ user['last_name'] }}, {{ user['email'] }}</li>
+		{% endfor %}
+	</ol>
 
 
-<div style="background-color:cyan; font-family: Courier; padding: 10px; white-space: pre;">
-{{ results }}
-</div>
+	<div style="background-color:cyan; font-family: Courier; padding: 10px; white-space: pre;">
+	{{ results }}
+	</div>
+{% endblock %}

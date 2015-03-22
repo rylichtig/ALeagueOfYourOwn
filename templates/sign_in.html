@@ -1,15 +1,11 @@
 {% extends "base.html" %}
 {% block title %}
-	Create Account
+	Sign in
 {% endblock %}
 
 {% block body %}
-	Make an account
-	<form method="POST" action="/create_account">
-	First Name:<br>
-		<input type="text" name="firstname"><br>
-	Last Name:<br>
-		<input type="text" name="lastname"><br>
+	Sign In
+	<form method="POST" action="/sign_in">
 	Email:<br>
 		<input type="text" name="email"><br>
 	Password:<br>
